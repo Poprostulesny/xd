@@ -19,6 +19,24 @@
       "shape_type": "rectangle",
       "flags": {},
       "mask": null
+    },
+    {
+      "label": "scissors",
+      "points": [
+        [
+          129.01923076923083,
+          276.7307692307692
+        ],
+        [
+          166.51923076923083,
+          366.15384615384613
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
     }
   ],
   "imagePath": "48001F003202511190085 czarno.bmp",

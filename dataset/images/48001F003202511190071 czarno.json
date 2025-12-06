@@ -3,15 +3,69 @@
   "flags": {},
   "shapes": [
     {
-      "label": "stuff",
+      "label": "bottle2",
       "points": [
         [
-          301.6666666666667,
-          197.49999999999994
+          126.6666666666667,
+          183.10606060606057
+        ],
+        [
+          153.93939393939397,
+          268.7121212121212
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "bottle",
+      "points": [
+        [
+          418.33333333333337,
+          231.59090909090907
         ],
         [
           449.39393939393943,
-          282.3484848484848
+          278.560606060606
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "grenade",
+      "points": [
+        [
+          413.7878787878788,
+          240.68181818181813
+        ],
+        [
+          309.24242424242425,
+          269.46969696969694
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "evilsquare",
+      "points": [
+        [
+          373.6363636363637,
+          277.80303030303025
+        ],
+        [
+          400.90909090909093,
+          252.80303030303025
         ]
       ],
       "group_id": null,

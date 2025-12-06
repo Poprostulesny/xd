@@ -19,6 +19,24 @@
       "shape_type": "rectangle",
       "flags": {},
       "mask": null
+    },
+    {
+      "label": "grenade",
+      "points": [
+        [
+          258.24757281553394,
+          377.93689320388347
+        ],
+        [
+          349.50970873786406,
+          394.4417475728156
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
     }
   ],
   "imagePath": "48001F003202511190100 czarno.bmp",

@@ -19,6 +19,60 @@
       "shape_type": "rectangle",
       "flags": {},
       "mask": null
+    },
+    {
+      "label": "grenade",
+      "points": [
+        [
+          243.53883495145635,
+          380.0242718446601
+        ],
+        [
+          344.5097087378641,
+          403.3252427184466
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "bottle",
+      "points": [
+        [
+          326.06310679611653,
+          424.6844660194174
+        ],
+        [
+          302.7621359223301,
+          385.8495145631067
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "bottle2",
+      "points": [
+        [
+          149.36407766990294,
+          147.98543689320385
+        ],
+        [
+          179.46116504854373,
+          237.30582524271844
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
     }
   ],
   "imagePath": "48001F003202511190106 czarno.bmp",

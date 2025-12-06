@@ -55,6 +55,96 @@
       "shape_type": "rectangle",
       "flags": {},
       "mask": null
+    },
+    {
+      "label": "crowbar",
+      "points": [
+        [
+          87.373786407767,
+          296.52912621359224
+        ],
+        [
+          266.0145631067961,
+          330.5097087378641
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "grenade",
+      "points": [
+        [
+          113.5873786407767,
+          396.52912621359224
+        ],
+        [
+          216.5,
+          413.03398058252424
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "bottle2",
+      "points": [
+        [
+          143.68446601941747,
+          357.69417475728153
+        ],
+        [
+          226.20873786407768,
+          386.8203883495145
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "evilsquare",
+      "points": [
+        [
+          198.05339805825244,
+          446.04368932038835
+        ],
+        [
+          164.0728155339806,
+          410.12135922330094
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "scissors",
+      "points": [
+        [
+          1084.4611650485438,
+          238.2766990291262
+        ],
+        [
+          1117.4708737864078,
+          324.6844660194174
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
     }
   ],
   "imagePath": "48001F003202511190119 czarno.bmp",

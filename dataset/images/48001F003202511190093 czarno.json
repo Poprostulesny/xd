@@ -37,6 +37,78 @@
       "shape_type": "rectangle",
       "flags": {},
       "mask": null
+    },
+    {
+      "label": "bottle",
+      "points": [
+        [
+          1151.8349514563106,
+          427.4514563106796
+        ],
+        [
+          1170.2815533980583,
+          368.2281553398058
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "evilsquare",
+      "points": [
+        [
+          1095.5242718446602,
+          392.50000000000006
+        ],
+        [
+          1132.4174757281553,
+          415.8009708737864
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "grenade",
+      "points": [
+        [
+          1065.4271844660195,
+          369.1990291262136
+        ],
+        [
+          1169.3106796116506,
+          400.2669902912622
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "scissors",
+      "points": [
+        [
+          183.87378640776697,
+          248.81067961165053
+        ],
+        [
+          226.5922330097087,
+          342.9854368932039
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
     }
   ],
   "imagePath": "48001F003202511190093 czarno.bmp",

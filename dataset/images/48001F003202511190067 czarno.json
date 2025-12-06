@@ -19,6 +19,24 @@
       "shape_type": "rectangle",
       "flags": {},
       "mask": null
+    },
+    {
+      "label": "bottle2",
+      "points": [
+        [
+          124.15151515151514,
+          182.34848484848482
+        ],
+        [
+          154.45454545454544,
+          265.68181818181813
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
     }
   ],
   "imagePath": "48001F003202511190067 czarno.bmp",

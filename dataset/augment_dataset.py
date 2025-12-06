@@ -13,7 +13,7 @@ from pathlib import Path
 
 # Parametry
 YOLO_DATASET_DIR = 'yolo_dataset'
-AUGMENTATIONS_PER_IMAGE = 5  # Ile wersji każdego obrazu wygenerować
+AUGMENTATIONS_PER_IMAGE = 10  # Ile wersji każdego obrazu wygenerować
 SEED = 42
 
 random.seed(SEED)
@@ -52,31 +52,31 @@ def augment_image_and_boxes(image, boxes):
     aug_image = image.copy()
     aug_boxes = [box[:] for box in boxes]  # Kopia
     
-    # 1. Horizontal flip (50% szans)
-    if random.random() > 0.5:
+    # 1. Horizontal flip (30% szans - mniejszy nacisk)
+    if random.random() > 0.7:
         aug_image = cv2.flip(aug_image, 1)
         for box in aug_boxes:
             box[1] = 1.0 - box[1]  # x_center = 1 - x_center
     
-    # 2. Brightness & Contrast
-    if random.random() > 0.3:
-        alpha = random.uniform(0.7, 1.3)  # Kontrast
-        beta = random.randint(-30, 30)     # Jasność
+    # 2. Brightness & Contrast (20% szans - mniejszy nacisk)
+    if random.random() > 0.8:
+        alpha = random.uniform(0.8, 1.2)  # Mniejszy zakres kontrastu
+        beta = random.randint(-20, 20)     # Mniejszy zakres jasności
         aug_image = cv2.convertScaleAbs(aug_image, alpha=alpha, beta=beta)
     
-    # 3. Gaussian Noise
-    if random.random() > 0.5:
-        noise = np.random.normal(0, 15, aug_image.shape).astype(np.uint8)
+    # 3. Gaussian Noise (10% szans - minimalny nacisk)
+    if random.random() > 0.9:
+        noise = np.random.normal(0, 10, aug_image.shape).astype(np.uint8)
         aug_image = cv2.add(aug_image, noise)
     
-    # 4. Gaussian Blur
-    if random.random() > 0.5:
+    # 4. Gaussian Blur (10% szans - minimalny nacisk)
+    if random.random() > 0.9:
         kernel_size = random.choice([3, 5])
         aug_image = cv2.GaussianBlur(aug_image, (kernel_size, kernel_size), 0)
     
-    # 5. Rotation (małe kąty, z zachowaniem bbox)
-    if random.random() > 0.5:
-        angle = random.uniform(-15, 15)
+    # 5. Rotation (90% szans - GŁÓWNY nacisk, większy zakres kątów)
+    if random.random() > 0.1:
+        angle = random.uniform(-30, 30)  # Zwiększony zakres rotacji
         center = (w // 2, h // 2)
         M = cv2.getRotationMatrix2D(center, angle, 1.0)
         aug_image = cv2.warpAffine(aug_image, M, (w, h), 
@@ -102,10 +102,10 @@ def augment_image_and_boxes(image, boxes):
             box[3] = max(0.01, min(1.0, new_w / w))
             box[4] = max(0.01, min(1.0, new_h / h))
     
-    # 6. Shift (małe przesunięcie)
-    if random.random() > 0.5:
-        shift_x = random.randint(-int(w * 0.1), int(w * 0.1))
-        shift_y = random.randint(-int(h * 0.1), int(h * 0.1))
+    # 6. Shift (60% szans - umiarkowany nacisk)
+    if random.random() > 0.4:
+        shift_x = random.randint(-int(w * 0.15), int(w * 0.15))  # Większy zakres
+        shift_y = random.randint(-int(h * 0.15), int(h * 0.15))
         M = np.float32([[1, 0, shift_x], [0, 1, shift_y]])
         aug_image = cv2.warpAffine(aug_image, M, (w, h),
                                    borderMode=cv2.BORDER_REFLECT)
@@ -114,9 +114,9 @@ def augment_image_and_boxes(image, boxes):
             box[1] = max(0.0, min(1.0, box[1] + shift_x / w))
             box[2] = max(0.0, min(1.0, box[2] + shift_y / h))
     
-    # 7. Scale (zoom in/out)
-    if random.random() > 0.5:
-        scale = random.uniform(0.8, 1.2)
+    # 7. Scale (70% szans - zwiększony nacisk)
+    if random.random() > 0.3:
+        scale = random.uniform(0.7, 1.3)  # Większy zakres skalowania
         new_w, new_h = int(w * scale), int(h * scale)
         aug_image = cv2.resize(aug_image, (new_w, new_h))
         

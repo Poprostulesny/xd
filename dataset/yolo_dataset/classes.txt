@@ -1,3 +1,7 @@
-crate
 bottle
-butelka
+box
+crate
+crowbar
+evilsquare
+grenade
+scissors

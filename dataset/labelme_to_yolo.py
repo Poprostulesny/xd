@@ -19,9 +19,14 @@ TRAIN_RATIO = 0.8  # 80% train, 20% val
 
 # Mapowanie klas (dodaj więcej jeśli potrzeba)
 CLASS_MAPPING = {
-    'crate': 0,
-    'bottle': 1,
-    'butelka': 1,
+    'bottle': 0,
+    #'bottle2': 1, #jednak gaśnica xd
+    'box': 2,
+    'crate': 3,
+    'crowbar': 4,
+    'evilsquare': 5,
+    'grenade': 6,
+    'scissors': 7,
 }
 
 

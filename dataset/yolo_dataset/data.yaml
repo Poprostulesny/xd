@@ -4,7 +4,7 @@ train: images/train
 val: images/val
 
 # Number of classes
-nc: 3
+nc: 7
 
 # Class names
-names: ['crate', 'bottle', 'butelka']
+names: ['bottle', 'box', 'crate', 'crowbar', 'evilsquare', 'grenade', 'scissors']

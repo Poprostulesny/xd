@@ -1,10 +1,10 @@
 # Dataset configuration for YOLO
-path: /home/olipol/Desktop/xd/dataset/yolo_dataset
+path: /home/mateusz/xd/dataset/yolo_dataset
 train: images/train
 val: images/val
 
 # Number of classes
-nc: 7
+nc: 6
 
 # Class names
-names: ['bottle', 'box', 'crate', 'crowbar', 'evilsquare', 'grenade', 'scissors']
+names: ['bottle', 'box', 'crate', 'grenade', 'scissors', 'crowbar']

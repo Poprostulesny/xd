@@ -21,12 +21,12 @@ TRAIN_RATIO = 0.8  # 80% train, 20% val
 CLASS_MAPPING = {
     'bottle': 0,
     #'bottle2': 1, #jednak gaśnica xd
-    'box': 2,
-    'crate': 3,
-    'crowbar': 4,
-    'evilsquare': 5,
-    'grenade': 6,
-    'scissors': 7,
+    'box': 1,
+    'crate': 2,
+    'crowbar': 5,
+    #'evilsquare': 5,
+    'grenade': 3,
+    'scissors': 4,
 }
 
 

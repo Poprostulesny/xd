@@ -13,8 +13,8 @@ from pathlib import Path
 
 # Parametry
 YOLO_DATASET_DIR = 'yolo_dataset'
-AUGMENTATIONS_PER_IMAGE = 10  # Ile wersji każdego obrazu wygenerować
-SEED = 42
+AUGMENTATIONS_PER_IMAGE = 2  # Ile wersji każdego obrazu wygenerować
+SEED = 2137
 
 random.seed(SEED)
 np.random.seed(SEED)

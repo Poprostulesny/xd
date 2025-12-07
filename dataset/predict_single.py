@@ -104,7 +104,7 @@ def main():
     #conf = 0.5
     
     # Domyślna ścieżka do modelu
-    model_path = 'runs/crate_detection/weights/best.pt'
+    model_path = 'runs/detect/train8/weights/best.pt'
     
     # Nazwa pliku wyjściowego
     basename = os.path.splitext(os.path.basename(image_path))[0]

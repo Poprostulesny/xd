@@ -1,7 +1,6 @@
 bottle
 box
 crate
-crowbar
-evilsquare
 grenade
 scissors
+crowbar

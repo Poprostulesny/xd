@@ -1,6 +1,0 @@
-bottle
-box
-crate
-grenade
-scissors
-crowbar
